@@ -1,0 +1,219 @@
+/* ---Google Fonts (Manrope) --- */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+/* --- Root Variables --- */
+:root {
+  /* Colors */
+  --color-primary-orange: #d87d4a;
+  --color-primary-orange-light: #fbaf85;
+  --color-dark-black: #101010;
+  --color-light-gray: #fafafa;
+  --color-medium-gray: #f1f1f1;
+  --color-dark-gray: #4c4c4c;
+  --color-white: #ffffff;
+  --logo-image-url: url("../public/images/logo.svg");
+
+  /* Typography */
+  --font-family-manrope: "Manrope", sans-serif;
+  --font-size-body: 15px;
+  --line-height-body: 25px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.6;
+  background-color: var(--color-white);
+  color: #101010;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 56px;
+  line-height: 58px;
+  letter-spacing: 2px;
+}
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+h4 {
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+h5 {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+h6 {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+p {
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+a:hover {
+  color: var(--color-primary-orange);
+}
+
+/* --- List Styles --- */
+ul {
+  list-style: none;
+}
+
+.logo {
+  display: block;
+  width: 143px;
+  height: 25px;
+  background-image: var(--logo-image-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+/* --- Image Styles --- */
+img {
+  max-width: 100%;
+  height: auto;
+  /* display: block; */
+}
+
+/* --- General Layout --- */
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/* --- Base Button Styles --- */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary-orange);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-orange-light);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background-color: var(--color-dark-black);
+  color: var(--color-white);
+  border: 1px solid var(--color-dark-black);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-dark-gray);
+  color: var(--color-white);
+  border: 1px solid var(--color-dark-gray);
+}
+
+.btn-tertiary {
+  background-color: transparent;
+  color: var(--color-dark-black);
+  border: 1px solid var(--color-dark-black);
+}
+
+.btn-tertiary:hover {
+  background-color: var(--color-dark-black);
+  color: var(--color-white);
+}
+
+.btn-quaternary {
+  /* For "SHOP" buttons */
+  background-color: transparent;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background: none;
+  color: var(--color-dark-black);
+}
+
+.btn-quaternary:hover {
+  color: var(--color-primary-orange);
+}
+
+/* .btn-tertiary svg {
+  transition: transform 0.3s ease;
+}
+
+.btn-tertiary:hover svg {
+  transform: translateX(5px);
+} */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.43px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+  }
+  h3 {
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 2px;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 1.7px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+  }
+  .container {
+    padding: 0 var(--spacing-md); /* Ensure padding on mobile */
+  }
+}

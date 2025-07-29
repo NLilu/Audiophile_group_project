@@ -1,0 +1,34 @@
+.categooryLinks {
+  display: flex;
+  max-width: 77%;
+  margin-inline: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-medium-gray);
+  border-radius: 8px;
+  width: 350px;
+  height: 204px;
+}
+
+.categoryItem > img {
+  max-width: 70%;
+  height: 70%;
+  margin-top: -40px;
+}
+
+.categoryPara {
+  color: var(--color-dark-black);
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 11px;
+  text-transform: uppercase;
+}

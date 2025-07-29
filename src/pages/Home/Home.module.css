@@ -1,0 +1,140 @@
+.mainContainer {
+  background-color: var(--color-dark-black);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.heroContent {
+  max-width: 77%;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  background-color: var(--color-dark-black);
+}
+
+.promo {
+  color: var(--color-white);
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: var(--spacing-xs);
+}
+.heroText {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.heroPara {
+  color: var(--color-white);
+  opacity: 0.6;
+  max-width: 65%;
+  font-size: 15px;
+}
+
+h1 {
+  color: var(--color-white);
+}
+
+.category {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.zx9,
+.zx7,
+.yx1 {
+  max-width: 77%;
+  margin-inline: auto;
+}
+
+.zx9 {
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  background-color: var(--color-primary-orange);
+  background-image: url(../../assets/home/desktop/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: -170px -30px;
+  background-size: cover;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.zx9Image {
+  display: flex;
+  flex: 50%;
+  padding-inline: 50px;
+}
+
+.zx9Text {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+  color: var(--color-white);
+  height: 100%;
+}
+
+.zx7 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  min-height: 320px;
+  background-image: url(../../assets/home/desktop/image-speaker-zx7.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+  padding-left: 100px;
+  border-radius: 8px;
+}
+
+.zx7 > h4 {
+  justify-content: center;
+}
+
+.yx1 {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.yx1Image,
+.yx1Text {
+  display: flex;
+
+  flex: 1;
+}
+
+.yx1Image > img {
+  border-radius: 8px;
+}
+.yx1Text {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: center;
+  background-color: var(--color-light-gray);
+  padding-left: 100px;
+}

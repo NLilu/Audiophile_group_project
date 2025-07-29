@@ -1,0 +1,36 @@
+.flexContainer {
+  max-width: 77%;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  margin-bottom: 150px;
+}
+
+.aboutImage {
+  flex: 1;
+}
+.aboutImage > img {
+  border-radius: 8px;
+}
+
+.aboutText {
+  flex: 1;
+}
+
+.aboutTitle {
+  font-weight: bold;
+  padding-right: 100px;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
+
+span {
+  color: var(--color-primary-orange);
+}
+
+.aboutPara {
+  font-size: 15px;
+  padding-right: 110px;
+  color: var(--color-dark-gray);
+  opacity: 0.6;
+}
