@@ -11,6 +11,7 @@
 }
 
 /* --- Root Variables --- */
+
 :root {
   /* Colors */
   --color-primary-orange: #d87d4a;
@@ -77,6 +78,7 @@ h6 {
 
 p {
   font-weight: 500;
+  opacity: 0.6;
 }
 
 a {
@@ -106,6 +108,7 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
   /* display: block; */
 }
 
@@ -127,6 +130,7 @@ img {
   border: 1px solid transparent;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .btn-primary {

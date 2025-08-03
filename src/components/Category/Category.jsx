@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "../Button";
-import HeadphonesImage from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
-import SpeakerImage from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
-import EarphonesImage from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
-import IconArrowRight from "../../assets/shared/desktop/icon-arrow-right.svg";
+import HeadphonesImage from "/assets/shared/desktop/image-category-thumbnail-headphones.png";
+import SpeakerImage from "/assets/shared/desktop/image-category-thumbnail-speakers.png";
+import EarphonesImage from "/assets/shared/desktop/image-category-thumbnail-earphones.png";
+import IconArrowRight from "/assets/shared/desktop/icon-arrow-right.svg";
 import styles from "./Category.module.css";
 
 function Category() {
@@ -13,7 +13,7 @@ function Category() {
         <div className={styles.categoryItem}>
           <img src={HeadphonesImage} alt="Headphones image"></img>
           <p className={styles.categoryPara}>headphones</p>
-          <Button variant="quaternary" to="/category/speakers">
+          <Button variant="quaternary" to="/category/headphones">
             shop <img src={IconArrowRight} alt="right arrow icon"></img>
           </Button>
         </div>

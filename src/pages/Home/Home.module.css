@@ -102,7 +102,7 @@ h1 {
   justify-content: center;
   height: auto;
   min-height: 320px;
-  background-image: url(../../assets/home/desktop/image-speaker-zx7.jpg);
+  background-image: url(assets/home/desktop/image-speaker-zx7.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 30px;
@@ -123,7 +123,6 @@ h1 {
 .yx1Image,
 .yx1Text {
   display: flex;
-
   flex: 1;
 }
 

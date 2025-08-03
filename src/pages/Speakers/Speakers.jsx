@@ -1,10 +1,14 @@
 import React from "react";
 import About from "../../components/About/About";
+import Category from "../../components/Category/Category";
+import ProductList from "../../components/ProductList";
 
 function Speakers() {
+  const speakerSlugs = ["zx9-speaker", "zx7-speaker"];
   return (
     <section className="container">
-      <h5> Speakers go here</h5>
+      <ProductList filterSlugs={speakerSlugs} categoryName="SPEAKERS" />
+      <Category />
       <About />
     </section>
   );

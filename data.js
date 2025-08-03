@@ -487,7 +487,8 @@ export const products = [
     image: {
       mobile: "./assets/product-zx9-speaker/mobile/image-product.jpg",
       tablet: "./assets/product-zx9-speaker/tablet/image-product.jpg",
-      desktop: "./assets/product-zx9-speaker/desktop/image-product.jpg",
+      desktop:
+        "./assets/product-zx9-speaker/desktop/image-category-page-preview.jpg",
     },
     category: "speakers",
     categoryImage: {

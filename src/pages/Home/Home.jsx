@@ -1,8 +1,8 @@
 import React from "react";
-import HeroBgHeadphones from "../../assets/product-xx99-mark-two-headphones/desktop/xx-99.jpg";
-import SpeakersZx9 from "../../assets/product-zx9-speaker/desktop/image-product.png";
-// import SpeakersZx7 from "../../assets/home/desktop/image-speaker-zx7";
-import Earphones from "../../assets/home/desktop/image-earphones-yx1.jpg";
+import HeroBgHeadphones from "/assets/product-xx99-mark-two-headphones/desktop/xx-99.jpg";
+import SpeakersZx9 from "/assets/product-zx9-speaker/desktop/image-product.jpg";
+// import SpeakersZx7 from "/assets/home/desktop/image-speaker-zx7";
+import Earphones from "/assets/home/desktop/image-earphones-yx1.jpg";
 import Button from "../../components/Button";
 import Category from "../../components/Category/Category";
 import About from "../../components/About/About";

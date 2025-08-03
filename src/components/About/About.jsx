@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import BestGearImage from "../../assets/shared/desktop/image-best-gear.jpg";
+import BestGearImage from "/assets/shared/desktop/image-best-gear.jpg";
 
 function About() {
   return (

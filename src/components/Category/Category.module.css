@@ -1,7 +1,7 @@
 .categooryLinks {
   display: flex;
   max-width: 77%;
-  margin-inline: auto;
+  margin: 150px auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;

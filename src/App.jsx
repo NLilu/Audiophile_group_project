@@ -6,8 +6,9 @@ import Home from "./pages/Home/Home.jsx";
 import Headphones from "./pages/Headphones/Headphones.jsx";
 import Speakers from "./pages/Speakers/Speakers.jsx";
 import Earphones from "./pages/Earphones/Earphones.jsx";
-// import Earphones from "./pages/Cart/Cart.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import ProductPage from "./pages/Product/ProductPage";
+import Checkout from "./pages/Checkout/Checkout.jsx";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
         <Route path="/category/headphones" element={<Headphones />} />
         <Route path="/category/speakers" element={<Speakers />} />
         <Route path="/category/earphones" element={<Earphones />} />
-        {/* <Route path="/category/cart" element={<Cart />} /> */}
+        <Route path="/product/:slug" element={<ProductPage />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       <Footer />
     </>
