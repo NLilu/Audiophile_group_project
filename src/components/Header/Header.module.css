@@ -69,41 +69,9 @@
   position: absolute;
   top: -6px;
   right: -10px;
-  background-color: red;
+  background-color: var(--color-primary-orange);
   color: var(--color-white);
   border-radius: 50%;
   font-size: 12px;
   padding: 2px 6px;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
-}
-
-.modal {
-  background: #fff;
-  padding: 32px;
-  border-radius: 8px;
-  width: 90%;
-  max-width: 500px;
-  position: relative;
-}
-
-.closeBtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
 }

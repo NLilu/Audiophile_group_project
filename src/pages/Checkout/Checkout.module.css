@@ -1,74 +1,123 @@
+.container {
+  background-color: var(--color-medium-gray);
+  padding-bottom: 100px;
+  font-family: var(--font-family-manrope);
+}
+.GoBackWrapper {
+  max-width: 77%;
+  margin: 0 auto;
+}
 .checkoutPage {
   display: flex;
   gap: 32px;
-  padding: 48px 24px;
   background-color: var(--color-medium-gray);
   flex-wrap: wrap;
   justify-content: center;
+  font-family: var(--font-family-manrope);
+  max-width: 77%;
+  margin-inline: auto;
+  margin-top: 50px;
 }
 
 .formSection {
   background: var(--color-white);
   padding: 32px;
   border-radius: 8px;
-  flex: 1;
-  max-width: 600px;
+  flex: 65%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-family-manrope);
 }
 
-.formSection h2 {
+.formSection h3 {
   text-transform: uppercase;
-  font-size: 28.8px;
+  font-size: 32px;
   margin-bottom: 24px;
+  font-family: var(--font-family-manrope);
+}
+
+.billingDivOne,
+.shippingDivTwo {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.address {
+  max-width: 622.8px;
+  width: 100%;
 }
 
 .formGroup {
   margin-bottom: 32px;
 }
 
-.formGroup h3 {
-  font-size: 13.6px;
+.formGroup h6 {
+  font-size: 13px;
   text-transform: uppercase;
   color: var(--color-primary-orange);
   margin-bottom: 16px;
 }
 
-.formGroup input {
-  display: block;
-  width: 100%;
+.formGroup input,
+.radioGroup input {
+  display: flex;
+  align-items: center;
+  width: 309px;
+  max-width: 309px;
   margin-bottom: 16px;
   padding: 12px 16px;
   border: 1px solid #cfcfcf;
   border-radius: 8px;
-  font-size: 15.2px;
+  font-size: 14px;
+  font-family: var(--font-family-manrope);
+  accent-color: var(--color-primary-orange);
 }
 
-.inlineInputs {
-  display: flex;
-  gap: 16px;
+input.address {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 
-.radioGroup {
-  display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
+input[type="radio"] {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--color-primary-orange);
+  border-radius: 50%;
+  margin: 0;
+  cursor: pointer;
 }
 
 .radioGroup label {
+  display: flex;
+  gap: 8px;
   flex: 1;
+  align-items: center;
   border: 1px solid #cfcfcf;
   border-radius: 8px;
   padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 500;
   cursor: pointer;
-  font-size: 15.2px;
+  width: 309px;
+  max-width: 309px;
 }
 
-.radioGroup input {
-  margin: 0;
-  accent-color: var(--color-primary-orange);
+.radioFlex {
+  display: flex;
+}
+
+.radioGroup {
+  margin-left: auto;
+}
+
+.formGroup,
+.radioLabel {
+  font-size: 12px;
+  font-weight: bold;
+  border: none;
 }
 
 .summarySection {
@@ -80,7 +129,7 @@
   align-self: start;
 }
 
-.summarySection h3 {
+.summarySection h6 {
   text-transform: uppercase;
   font-size: 19.2px;
   margin-bottom: 24px;
@@ -107,14 +156,15 @@
 
 .summaryItem p {
   margin: 0;
-  font-size: 14.4px;
+  font-size: 14px;
 }
 
 .totals {
   margin-top: 32px;
   border-top: 1px solid #eee;
   padding-top: 24px;
-  font-size: 15.2px;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .totals p {
@@ -123,9 +173,25 @@
   margin-bottom: 8px;
 }
 
+.totals span {
+  color: var(--color-dark-black);
+  opacity: 1;
+  font-weight: bold;
+}
+
 .totals strong {
   color: var(--color-primary-orange);
-  font-size: 17.6px;
+  font-size: 18px;
+}
+
+.grandTotal {
+  margin-top: 20px;
+}
+
+.grandTotal span {
+  color: var(--color-primary-orange);
+  font-weight: bold;
+  opacity: 1;
 }
 
 .payBtn {
@@ -147,4 +213,27 @@
 
 input:focus {
   outline-color: var(--color-primary-orange);
+}
+
+.eMoneyFields {
+  display: flex;
+  /* gap: 50px; */
+  flex: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.eMoneyFields input {
+  width: 309px;
+  max-width: 309px;
+}
+
+.cod {
+  display: flex;
+  margin-top: 30px;
+  padding-right: 50px;
+}
+
+.codImage {
+  flex: 30%;
 }

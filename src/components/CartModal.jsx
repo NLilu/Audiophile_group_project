@@ -28,8 +28,14 @@ export default function CartModal({ onClose }) {
   const total = cart.reduce((sum, item) => sum + item.quantity * item.price, 0);
   const navigate = useNavigate();
 
+  const shortenName = (fullName) => {
+    return fullName
+      .replace(/( Headphone| Speaker| Wireless Earphone)s?/g, "")
+      .replace("Mark ", "MK ");
+  };
+
   return (
-    <section className="container">
+    <>
       <div className={styles.overlay}>
         <div className={styles.modal}>
           <div className={styles.header}>
@@ -48,8 +54,10 @@ export default function CartModal({ onClose }) {
                   className={styles.image}
                 />
                 <div className={styles.info}>
-                  <p className={styles.name}>{item.name}</p>
-                  <p className={styles.price}>$ {item.price}</p>
+                  <p className={styles.name}>{shortenName(item.name)}</p>
+                  <p className={styles.price}>
+                    $ {item.price.toLocaleString()}
+                  </p>
                 </div>
                 <div className={styles.quantity}>
                   <button onClick={() => updateQuantity(item.id, -1)}>-</button>
@@ -75,9 +83,8 @@ export default function CartModal({ onClose }) {
             CHECKOUT
           </button>
         </div>
-
-        <div className={styles.backdrop} onClick={onClose}></div>
       </div>
-    </section>
+      <div className={styles.backdrop} onClick={onClose}></div>
+    </>
   );
 }

@@ -33,7 +33,7 @@ body {
   font-family: "Manrope", sans-serif;
   line-height: 1.6;
   background-color: var(--color-white);
-  color: #101010;
+  color: var(--color-dark-black);
 }
 
 h1,
@@ -46,20 +46,23 @@ h6 {
 }
 
 h1 {
-  font-size: 56px;
-  line-height: 58px;
+  font-size: clamp(36px, 4vw, 56px);
+  line-height: clamp(40px, 5vw, 58px);
   letter-spacing: 2px;
 }
+
 h2 {
-  font-size: 40px;
-  line-height: 44px;
+  font-size: clamp(32px, 3.5vw, 40px);
+  line-height: clamp(36px, 4vw, 44px);
   letter-spacing: 1.5px;
 }
+
 h3 {
-  font-size: 32px;
-  line-height: 36px;
+  font-size: clamp(28px, 3vw, 32px);
+  line-height: clamp(32px, 3.5vw, 36px);
   letter-spacing: 1.15px;
 }
+
 h4 {
   font-size: 28px;
   line-height: 38px;
@@ -168,7 +171,6 @@ img {
 
 .btn-quaternary {
   /* For "SHOP" buttons */
-  background-color: transparent;
   display: flex;
   gap: 4px;
   align-items: center;
