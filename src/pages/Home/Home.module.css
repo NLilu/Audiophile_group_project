@@ -19,7 +19,7 @@
   opacity: 0.6;
   font-size: 14px;
   font-weight: 300;
-  letter-spacing: var(--spacing-xs);
+  letter-spacing: 5px;
 }
 .heroText {
   display: flex;
@@ -136,4 +136,44 @@ h1 {
   justify-content: center;
   background-color: var(--color-light-gray);
   padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .heroContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url("/assets/home/tablet/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 70px;
+    gap: 50px;
+  }
+
+  .heroImage {
+    display: none;
+  }
+
+  .heroText {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .promo {
+    padding-top: 150px;
+  }
+  .heroText h1 {
+    max-width: 80%;
+  }
+  .heroPara {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .heroText h1 {
+    font-size: 36px;
+    max-width: 90%;
+  }
 }

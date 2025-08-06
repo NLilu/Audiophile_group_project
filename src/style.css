@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 /* --- Root Variables --- */
@@ -170,56 +170,20 @@ img {
 }
 
 .btn-quaternary {
-  /* For "SHOP" buttons */
   display: flex;
   gap: 4px;
   align-items: center;
   background: none;
   color: var(--color-dark-black);
+  opacity: 0.6;
 }
 
 .btn-quaternary:hover {
   color: var(--color-primary-orange);
 }
 
-/* .btn-tertiary svg {
-  transition: transform 0.3s ease;
-}
-
-.btn-tertiary:hover svg {
-  transform: translateX(5px);
-} */
-
 @media (max-width: 768px) {
-  h1 {
-    font-size: 40px;
-    line-height: 44px;
-    letter-spacing: 1.43px;
-  }
-  h2 {
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 1.29px;
-  }
-  h3 {
-    font-size: 28px;
-    line-height: 38px;
-    letter-spacing: 2px;
-  }
-  h4 {
-    font-size: 24px;
-    line-height: 33px;
-    letter-spacing: 1.7px;
-  }
-}
-
-@media (max-width: 375px) {
-  h1 {
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 1.29px;
-  }
   .container {
-    padding: 0 var(--spacing-md); /* Ensure padding on mobile */
+    max-width: 768px;
   }
 }

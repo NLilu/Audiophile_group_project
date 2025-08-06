@@ -7,15 +7,17 @@
   margin-top: 150px;
 }
 
-.aboutImage {
+.aboutImage,
+.aboutText {
   flex: 1;
 }
 .aboutImage > img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
   border-radius: 8px;
-}
-
-.aboutText {
-  flex: 1;
+  object-fit: contain;
+  display: block;
 }
 
 .aboutTitle {
@@ -34,4 +36,26 @@ span {
   padding-right: 110px;
   color: var(--color-dark-gray);
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .flexContainer {
+    max-width: 89%;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+  }
+
+  .aboutTitle {
+    font-size: 40px;
+  }
+  .aboutTitle,
+  .aboutPara {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 375px) {
 }
