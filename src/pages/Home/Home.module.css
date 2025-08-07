@@ -118,16 +118,19 @@ h1 {
   display: flex;
   margin-bottom: 30px;
   gap: 20px;
+  border-radius: 8px;
 }
 
 .yx1Image,
 .yx1Text {
   display: flex;
-  flex: 1;
+  flex: 50%;
 }
 
 .yx1Image > img {
   border-radius: 8px;
+  max-width: 100%;
+  object-fit: cover;
 }
 .yx1Text {
   flex-direction: column;
@@ -139,6 +142,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+  .category {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
   .heroContent {
     flex-direction: column;
     align-items: center;
@@ -171,9 +178,73 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+  .zx9,
+  .zx7,
+  .yx1 {
+    max-width: 89%;
+  }
+
+  .zx9 {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-position: 0 -145px;
+  }
+  .zx9Image > img {
+    max-width: 197px;
+  }
+
+  .zx9Text {
+    align-items: center;
+    gap: 20px;
+    max-width: 60%;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .zx9Text h1 {
+    padding-inline: 80px;
+  }
+
+  .zx9Text p {
+    padding-inline: 20px;
+  }
+
+  .zx7 {
+    background-image: url(/assets/home/tablet/image-speaker-zx7.jpg);
+    padding-left: 50px;
+  }
+
+  .yx1 {
+    gap: 10px;
+  }
+
+  .yx1Text {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 375px) {
   .heroText h1 {
     font-size: 36px;
     max-width: 90%;
+  }
+
+  .zx9Text {
+    max-width: 89%;
+  }
+
+  .zx9Text p {
+    padding-inline: 0;
+  }
+
+  .zx7 {
+    background-image: url(/assets/home/mobile/image-speaker-zx7.jpg);
+    padding-left: 15px;
+  }
+
+  .yx1 {
+    flex-direction: column;
   }
 }

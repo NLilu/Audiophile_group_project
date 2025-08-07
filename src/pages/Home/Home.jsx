@@ -61,7 +61,7 @@ function Home() {
             <img src={Earphones} alt="black earphones" />
           </div>
           <div className={styles.yx1Text}>
-            <h4>ZX7 EARPHONES</h4>
+            <h4>YX1 EARPHONES</h4>
             <Button variant="tertiary" to="/product/zx7-speaker">
               SEE PRODUCT
             </Button>

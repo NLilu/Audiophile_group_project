@@ -60,9 +60,19 @@ export default function CartModal({ onClose }) {
                   </p>
                 </div>
                 <div className={styles.quantity}>
-                  <button onClick={() => updateQuantity(item.id, -1)}>-</button>
-                  <span>{item.quantity}</span>
-                  <button onClick={() => updateQuantity(item.id, 1)}>+</button>
+                  <button
+                    className={styles.qtyBtn}
+                    onClick={() => updateQuantity(item.id, -1)}
+                  >
+                    -
+                  </button>
+                  <span className={styles.qty}>{item.quantity}</span>
+                  <button
+                    className={styles.qtyBtn}
+                    onClick={() => updateQuantity(item.id, 1)}
+                  >
+                    +
+                  </button>
                 </div>
               </li>
             ))}

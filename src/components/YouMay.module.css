@@ -1,6 +1,11 @@
 .recommendationSection {
+  margin-top: 100px;
+}
+
+.recommendationSection h2 {
+  max-width: 77%;
+  margin-inline: auto;
   text-align: center;
-  margin-top: 160px;
 }
 
 .recommendationGrid {
@@ -8,7 +13,8 @@
   justify-content: center;
   gap: 30px;
   margin-top: 64px;
-  flex-wrap: wrap;
+  max-width: 89%;
+  margin-inline: auto;
 }
 
 .recommendationItem {
@@ -22,4 +28,25 @@
 .image {
   width: 100%;
   border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .recommendationSection {
+    margin-bottom: 100px;
+  }
+  .recommendationSection h2,
+  .recommendationGrid {
+    max-width: 89%;
+    gap: 20px;
+  }
+
+  .recommendationItem {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .recommendationGrid {
+    flex-direction: column;
+  }
 }

@@ -18,7 +18,7 @@
 .productText {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 50%;
   width: 100%;
   gap: 30px;
   align-items: flex-start;
@@ -36,4 +36,25 @@
 
 .reverse {
   flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .productListContainer {
+    max-width: 89%;
+  }
+
+  .productListFlex {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .productImage,
+  .productText {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+  }
 }

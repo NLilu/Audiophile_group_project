@@ -13,7 +13,7 @@
 .modal {
   background: var(--color-white);
   padding: 32px;
-  width: 377px;
+  max-width: 377px;
   position: absolute;
   top: 120px;
   right: 50px;
@@ -111,11 +111,17 @@
   width: 100%;
   padding: 16px;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
 }
 
-span {
-  color: black;
+.qty {
+  color: var(--color-dark-black);
+}
+
+.name {
+  opacity: 1;
+}
+.qtyBtn:hover {
+  color: var(--color-primary-orange);
 }
