@@ -9,7 +9,7 @@ import styles from "./Category.module.css";
 function Category() {
   return (
     <section className={`container`}>
-      <section className={styles.categooryLinks}>
+      <section className={styles.categoryLinks}>
         <div className={styles.categoryItem}>
           <img src={HeadphonesImage} alt="Headphones image"></img>
           <p className={styles.categoryPara}>headphones</p>

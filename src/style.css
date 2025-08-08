@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* --- Root Variables --- */
@@ -107,6 +107,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center left;
 }
+
 /* --- Image Styles --- */
 img {
   max-width: 100%;

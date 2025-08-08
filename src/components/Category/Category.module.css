@@ -1,4 +1,4 @@
-.categooryLinks {
+.categoryLinks {
   display: flex;
   max-width: 77%;
   margin: 150px auto;
@@ -37,7 +37,7 @@
 }
 
 @media (max-width: 768px) {
-  .categooryLinks {
+  .categoryLinks {
     max-width: 89%;
     margin: 50px auto;
   }
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 375px) {
-  .categooryLinks {
+  .categoryLinks {
     flex-direction: column;
     gap: 60px;
   }

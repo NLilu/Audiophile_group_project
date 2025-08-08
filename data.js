@@ -15,7 +15,7 @@ export const products = [
       tablet:
         "./assets/product-yx1-earphones/tablet/image-category-page-preview.jpg",
       desktop:
-        "./assets/product-yx1-earphones/desktop/image-category-page-previ+ew.jpg",
+        "./assets/product-yx1-earphones/desktop/image-category-page-preview.jpg",
     },
     new: true,
     price: 599,

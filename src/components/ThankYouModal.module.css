@@ -22,8 +22,8 @@
   text-align: left;
   z-index: 301;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 150px;
+  left: 450px;
 }
 
 .checkIcon {
@@ -135,4 +135,15 @@
 .backBtn {
   margin-top: 16px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .modal {
+    position: fixed;
+    top: 120px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    margin: 0 auto;
+  }
 }
