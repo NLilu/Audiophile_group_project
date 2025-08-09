@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./Checkout.module.css";
 import ThankYouModal from "../../components/ThankYouModal";
 import GoBack from "../../components/GoBack";
-import cod from "../../../public/images/cod.png";
+import cod from "../../../src/images/cod.png";
 
 function Checkout() {
   const [cart, setCart] = useState([]);
