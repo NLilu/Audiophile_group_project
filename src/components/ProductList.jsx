@@ -1,7 +1,7 @@
 import React from "react";
 import { products } from "../../data";
 import Button from "./Button";
-import styles from "../components/productList.module.css";
+import styles from "./productList.module.css";
 
 export default function ProductList({ filterSlugs, categoryName }) {
   const productsToRender =
