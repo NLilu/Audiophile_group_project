@@ -174,7 +174,7 @@ function Checkout() {
                       type="password"
                       placeholder="****"
                       id="eMoneyPin"
-                      name="eMoneyPin"
+                      autocomplete="current-password"
                       required
                     />
                   </div>
