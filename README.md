@@ -22,4 +22,4 @@ This is a solution to the Audiophile e-commerce website challenge implemented by
 
 A massive thank you to frontend mentor Keti Gagua for her help and guidance.
 
-URL: https://serene-begonia-a4aff7.netlify.app/
+URL: https://audiophile-a4af7f.netlify.app
