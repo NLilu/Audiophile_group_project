@@ -44,7 +44,7 @@
 }
 
 .address {
-  max-width: 622.8px;
+  max-width: 623px;
   width: 100%;
 }
 
@@ -219,6 +219,7 @@ input:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .eMoneyFields input {
