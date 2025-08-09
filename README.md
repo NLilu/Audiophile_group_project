@@ -16,7 +16,7 @@ This is a solution to the Audiophile e-commerce website challenge implemented by
 *Fill in all fields in the checkout
 *See checkout totals, including VAT
 *See an order confirmation modal redirecting to Home page
-\*Built with HTML, CSS Module, React + Vite, React Router, React Icons
+*Built with HTML, CSS Module, React + Vite, React Router, React Icons
 
 ### <ins>Acknowledgements:</ins>
 
